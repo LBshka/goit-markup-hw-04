@@ -422,9 +422,6 @@ link {
   position: relative;
 }
 
-.portfolio-item:hover {
-}
-
 .portfolio-item-cover {
   position: relative;
   overflow: hidden;
