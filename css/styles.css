@@ -417,6 +417,21 @@ link {
   background: var(--WHITE, #fff);
   width: 360px;
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item-cover {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item-cover:hover {
 }
 
 .portfolio-photo {
@@ -446,6 +461,29 @@ link {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.portfolio-text-wrap {
+}
+
+.portfolio-cover-text {
+  position: absolute;
+  top: 0;
+  color: var(--CLOUD, #f4f4fd);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--IRIS, #4d5ae5);
+}
+
+.portfolio-item:hover .portfolio-cover-text {
+  transform: translateY(0%);
+}
+
 /* ----------------------------------------------------------- */
 
 /* ----------------------------FOOTER---------------------------------- */
@@ -453,6 +491,24 @@ link {
 .footer {
   padding: 100px 0;
   background: #2e2f42;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo-paragraph {
+  margin-right: 120px;
+}
+
+.footer-soc-text {
+  margin-bottom: 16px;
+  color: var(--WHITE, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer-menu-link {
@@ -481,6 +537,35 @@ link {
   letter-spacing: 0.02em;
   width: 100%;
   max-width: 264px;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-soc-svg {
+  fill: #f4f4fd;
 }
 
 /* ------------------------------------------------------------ */
