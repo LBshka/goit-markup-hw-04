@@ -76,8 +76,6 @@ link {
   background-color: var(--WHITE, #fff);
   display: flex;
   align-items: center;
-
-  padding: 24px 0px;
 }
 
 .header-navigation {
@@ -112,6 +110,7 @@ link {
 
 .header-menu-link {
   color: var(--NAVY-BLUE, #2e2f42);
+  padding: 24px 0px;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -349,6 +348,7 @@ link {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .people-icon-list {
@@ -361,7 +361,6 @@ link {
 .people-icon-item {
   width: 40px;
   height: 40px;
-  margin-top: 8px;
 }
 
 .people-icon-link {
