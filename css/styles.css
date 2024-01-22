@@ -86,6 +86,7 @@ link {
 
 .header-logo {
   color: #4d5ae5;
+  padding: 24px 0px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -98,6 +99,7 @@ link {
 
 .header-logo-white {
   color: #2e2f42;
+  padding: 24px 0px;
 }
 
 .header-list {
@@ -159,6 +161,7 @@ link {
 
 .address-link {
   color: var(--SLATE, #434455);
+  padding: 24px 0px;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
